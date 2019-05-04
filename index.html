@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title>Bootstrap 4 Template</title>
+    <title>Information Processing Lab</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
@@ -32,42 +32,37 @@
             }
         /* Overide Jumbotron's color */
         .jumbotron {
-    background-color: lightskyblue;
+            /*background-color: lightskyblue;*/
+            margin-top: 3rem;
         }
     </style>
 
   </head>
 
-  <body data-spy="scroll" data-target="#navbar-example">
+  <body data-spy="scroll" data-target="#topNav">
 
-    <nav id="topNav" class="navbar navbar-full navbar-static-top navbar-dark bg-inverse">
+    <nav id="topNav" class="navbar navbar-full navbar-fixed-top navbar-dark bg-inverse">
         <div class="container">
             <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 &#9776;
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="#">IPL@UW</a>
             <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#grid">Grid</a>
+                        <a class="nav-link" href="#news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cards">Cards</a>
+                        <a class="nav-link" href="#people">People</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tags">Tags</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#customForms">Forms</a>
+                        <a class="nav-link" href="#software">Software</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#outlineButtons">Buttons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#progress">Progress Bars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tables">Tables</a>
+                        <a class="nav-link" href="#life">Life</a>
                     </li>
                 </ul>
             </div>
@@ -76,199 +71,141 @@
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-3">Fluid Jumbotron!</h1>
-        <p>This is a fluid jumbotron. Fluid jumbotrons occupy the entire horizontal space of its parent.</p>
-        <p>Fluid jumbotrons are new in Bootstrap 4.</p>
-        <p><a class="btn btn-primary btn-lg" href="http://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_jumbotron.cfm" role="button">Jumbotron Examples &raquo;</a></p>
+        <h1>Information Processing Lab</h1>
+        <br>
+        <p> Main research thrust of our current work is in the multimedia signal processing, multimedia networking and machine learning areas. A specific focus is on the large scale smart camera networks analytics and networking. </p>
+        <p> The research group works under the guidance of Prof. Jenq-Neng Hwang and Prof. Ming-Ting Sun. </p>
       </div>
     </div>
 
     <div class="container">
-        <section id="grid">
-            <h2>Bigger Grid</h2>
-            <p>OK, maybe not <em>bigger</em> but... Bootstrap 4 uses a 5 tier grid system compared to the 4 tier grid system in Bootstrap 3.</p>
-            <p>Bootstrap 4 added <code>sm</code> to its grid classes, so it now supports <code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code> (for example, <code>class="col-sm-6</code>).</p>
-
-            <div class="grid-example">
-                <!-- Bootstrap Grid -->
-                <div class="row">
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                  <div class="col-sm-1">.col-sm-1</div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-2">.col-sm-2</div>
-                  <div class="col-sm-3">.col-sm-3</div>
-                  <div class="col-sm-7">.col-sm-7</div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-4">.col-sm-4</div>
-                  <div class="col-sm-4">.col-sm-4</div>
-                  <div class="col-sm-4">.col-sm-4</div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-5">.col-sm-5</div>
-                  <div class="col-sm-7">.col-sm-7</div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">.col-sm-6</div>
-                  <div class="col-sm-6">.col-sm-6</div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">.col-sm-12</div>
-                </div>
-            </div>
-
-            <p>The following table shows how different grid options work with different viewport sizes.</p>
-
-            <table class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>
-                      Extra small
-                      <small>&lt;34em</small>
-                    </th>
-                    <th>
-                      Small
-                      <small>&ge;34em</small>
-                    </th>
-                    <th>
-                      Medium
-                      <small>&ge;48em</small>
-                    </th>
-                    <th>
-                      Large
-                      <small>&ge;62em</small>
-                    </th>
-                    <th>
-                      Extra large
-                      <small>&ge;75em</small>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Grid behavior</th>
-                    <td>Horizontal at all times</td>
-                    <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Container width</th>
-                    <td>None (auto)</td>
-                    <td>34rem</td>
-                    <td>45rem</td>
-                    <td>60rem</td>
-                    <td>72.25rem</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Class prefix</th>
-                    <td><code>.col-xs-</code></td>
-                    <td><code>.col-sm-</code></td>
-                    <td><code>.col-md-</code></td>
-                    <td><code>.col-lg-</code></td>
-                    <td><code>.col-xl-</code></td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Number of columns</th>
-                    <td colspan="5">12</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Gutter width</th>
-                    <td colspan="5">30px (15px on each side of a column)</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Nestable</th>
-                    <td colspan="5">Yes</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Offsets</th>
-                    <td colspan="5">Yes</td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap" scope="row">Column ordering</th>
-                    <td colspan="5">Yes</td>
-                  </tr>
-                </tbody>
-            </table>
-            
+        <section id="news">
+            <h2 class="display-4">News</h2>
         </section>
+    </div>
 
-
-        <section id="cards">
-            <h2>Introducing Cards</h2>
-            <p>In Bootstrap 4, <a href="http://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_cards.cfm">cards</a> replace panels, thumbnails and wells from Bootstrap 3.</p>
-
-            <div class="card-columns">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="card-header">Card 1</div>
-                        <div class="card-block">
-                        <p class="card-text">Text for this card.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Card 2</h4>
-                        <p class="card-text">Text for this card.</p>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="card">
-                    <div class="card-header">Card 3</div>
-                        <div class="card-block">
-                           <p class="card-text">Text for this card. Here's <a href="#" class="card-link">why</a>.</p>
+    <div class="container">
+        <section id="people">
+            <h2 class="display-4">People</h2>
+            <section>
+                <h2>Professors</h2>
+                <br>
+                <div class="card row">
+                    <div class="no-gutters">
+                        <div style="width: 20%; float: left">
+                            <img src="images/avatars/hwang.jpg" alt="" width="100%">
                         </div>
-                    <div class="card-footer">Footer</div>
-                </div>
-                <!-- Card 4 -->
-                <div class="card">
-                    <div class="card-header">Card 4</div>
-                        <div class="card-block">
-                            <p class="card-text">Text for this card.</p>
+                        <div class="col" style="width: 60%; float: left">
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Prof. Jenq-Neng Hwang</h4>
+                                <p class="card-text"><strong>Research Interests:</strong> 
+                                    <ul>
+                                        <li>Image/video signal processing</li>
+                                        <li>Multimedia network and QoS</li>
+                                        <li>Statistical pattern recognition</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="btn btn-primary">Email</a>
+                                <a href="#" class="btn btn-primary">Web</a>
+                            </div>
                         </div>
-                    <div class="card-footer">Footer</div>
-                </div>
-                <!-- Card 5 -->
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Card 5</h4>
-                        <p class="card-text">Text for this card.</p>
                     </div>
                 </div>
-                <!-- Card 6 -->
-                <div class="card">
-                    <div class="card-header">Card 6</div>
-                    <div class="card-block">
-                        <p class="card-text">Text for this card. Here's <a href="#" class="card-link">why</a>.</p>
+
+                <div class="card row">
+                    <div class="no-gutters">
+                        <div style="width: 20%; float: left">
+                            <img src="images/avatars/sun.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col" style="width: 60%; float: left">
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Prof. Ming-Ting Sun</h4>
+                                <p class="card-text"><strong>Research Interests:</strong> 
+                                    <ul>
+                                        <li>Video coding and networking - H.264 optimization, next generation video coding, transcoding, streaming</li>
+                                        <li>Machine learning - multi-modality, surveillance, health care, intelligent home</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="btn btn-primary">Email</a>
+                                <a href="#" class="btn btn-primary">Web</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Card 7 -->
-                <div class="card">
-                    <div class="card-header">Card 7</div>
-                    <div class="card-block">
-                        <p class="card-text">Text for this card. Here's <a href="#" class="card-link">why</a>.</p>
+
+                <br>
+
+                <h2>Affiliate Professor</h2>
+                <br>
+                <div class="card row">
+                    <div class="no-gutters">
+                        <div style="width: 20%; float: left">
+                            <img src="images/avatars/luo.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col" style="width: 60%; float: left">
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Dr. Fa-Long Luo</h4>
+                                <p>Chief Scientist: Micron Technology, Inc.</p>
+                                <p class="card-text"><strong>Research Interests:</strong> 
+                                    <ul>
+                                        <li>Optimal silicon convergence of application algorithm</li>
+                                        <li>Computing platform and memory access in terms of high performance</li>
+                                        <li>Low power and small die-size</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="btn btn-primary">Email</a>
+                                <a href="#" class="btn btn-primary">Web</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">Footer</div>
                 </div>
-                <!-- Card 8 -->
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Card 8</h4>
-                        <p class="card-text">Text for this card.</p>
+
+            </section>
+
+            <section>
+                <h2>Graduate Students</h2>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <!-- Image -->
+                            <img src="images/avatars/zheng-tang.jpg" alt="" width="100%">
+                            <!-- Text Content -->
+                            <div class="card-body" style="padding: 10pt">
+                                <h4 class="card-title">Zheng Tang</h4>
+                                <h6 class="card-subtitle text-muted">Ph.D</h6>
+                                <p class="card-text">Computer Vision, Machine Learning, Multiple Object Tracking</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <!-- Image -->
+                            <img src="/pix/samples/12s.jpg" alt="">
+
+                            <!-- Text Content -->
+                            <div class="card-body">
+                                <h4 class="card-title">Sun Gone</h4>
+                                <h6 class="card-subtitle text-muted">Sun disappears!</h6>
+                                <p class="card-text">The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <!-- Image -->
+                            <img src="/pix/samples/12s.jpg" alt="">
+
+                            <!-- Text Content -->
+                            <div class="card-body">
+                                <h4 class="card-title">Sun Gone</h4>
+                                <h6 class="card-subtitle text-muted">Sun disappears!</h6>
+                                <p class="card-text">The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p>
+                            </div>
+                        </div> 
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
         
         <section id="tags">
@@ -523,7 +460,7 @@
         </section>
 
         <footer>
-            <p>&copy; Somebody 2016</p>
+            <p>&copy; 2019 IPL@UW</p>
         </footer>
     </div> <!-- /container -->
 
