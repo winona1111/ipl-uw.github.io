@@ -60,6 +60,24 @@
         .bio-text {
             padding: 0.5rem;
         }
+        .news-bullet li {
+            display: block;
+            font-size: 25px;
+            margin: 1rem;
+        }
+
+        .news-bullet li:before
+        {
+            /*Using a Bootstrap glyphicon as the bullet point*/
+            content: "\e080";
+            font-family: 'Glyphicons Halflings';
+            font-size: 25px;
+            float: left;
+            margin-left: -40px;
+            margin-right: 10px;
+            color: #CCCCCC;
+        }
+
     </style>
 
   </head>
@@ -102,7 +120,10 @@
 
     <div class="container">
         <section id="news">
-            <h2 class="display-4">News</h2>
+            <h2 class="display-4">News</h2><br>
+            <ul class="news-bullet">
+                <li>aaa</li>
+            </ul>
         </section>
     </div>
 
@@ -173,7 +194,7 @@
             <br>
             <div class="row">
                 <!-- <div class="people-student"> -->
-                    <div class="people-student col-md-3 col-sm-4 col-xs-5">
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
                         <a href="https://sites.google.com/site/zhengthomastang">
                             <img class="img-circle" src="images/avatars/zheng_tang.jpg" alt="" width="100%">
                         </a>
@@ -189,7 +210,7 @@
                     </div>
                 <!-- </div> -->
                 <!-- <div class="people-student"> -->
-                    <div class="people-student col-md-3 col-sm-4 col-xs-5">
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
                         <!-- <a href="https://sites.google.com/site/zhengthomastang"> -->
                             <img class="img-circle" src="images/avatars/renshu_gu.jpg" alt="" width="100%">
                         <!-- </a> -->
@@ -205,7 +226,7 @@
                     </div>
                 <!-- </div> -->
                 <!-- <div class="people-student"> -->
-                    <div class="people-student col-md-3 col-sm-4 col-xs-5">
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
                         <a href="https://sites.google.com/a/uw.edu/twhuang">
                             <img class="img-circle" src="images/avatars/tsung-wei_huang.jpg" alt="" width="100%">
                         </a>
@@ -220,7 +241,7 @@
                     </div>
                 <!-- </div> -->
                 <!-- <div class="people-student"> -->
-                    <div class="people-student col-md-3 col-sm-4 col-xs-5">
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
                         <a href="https://sites.google.com/site/gaoangwang1991">
                             <img class="img-circle" src="images/avatars/gaoang_wang.jpg" alt="" width="100%">
                         </a>
@@ -236,7 +257,7 @@
                     </div>
                 <!-- </div> -->
                 <!-- <div class="people-student"> -->
-                    <div class="people-student col-md-3 col-sm-4 col-xs-5">
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
                         <a href="https://students.washington.edu/cluw">
                             <img class="img-circle" src="images/avatars/li_chen.jpg" alt="" width="100%">
                         </a>
