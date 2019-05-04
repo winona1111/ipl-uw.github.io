@@ -35,6 +35,31 @@
             /*background-color: lightskyblue;*/
             margin-top: 3rem;
         }
+        .people-faulty {
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+        }
+        .people-student {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            float: none;
+            padding-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .our-ul {
+            padding-inline-start: 20px;
+        }
+        .img-round {
+            border-radius: 10%;
+        }
+        .img-circle {
+            border-radius: 50%;
+        }
+        .bio-text {
+            padding: 0.5rem;
+        }
     </style>
 
   </head>
@@ -46,14 +71,11 @@
             <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 &#9776;
             </button>
-            <a class="navbar-brand" href="#">IPL@UW</a>
+            <a class="navbar-brand" href="index.html">IPL@UW</a>
             <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#people">People</a>
+                        <a class="nav-link" href="people.html#people">People</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -87,378 +109,149 @@
     <div class="container">
         <section id="people">
             <h2 class="display-4">People</h2>
-            <section>
-                <h2>Professors</h2>
-                <br>
-                <div class="card row">
-                    <div class="no-gutters">
-                        <div style="width: 20%; float: left">
-                            <img src="images/avatars/hwang.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col" style="width: 60%; float: left">
-                            <div class="card-block px-2">
-                                <h4 class="card-title">Prof. Jenq-Neng Hwang</h4>
-                                <p class="card-text"><strong>Research Interests:</strong> 
-                                    <ul>
-                                        <li>Image/video signal processing</li>
-                                        <li>Multimedia network and QoS</li>
-                                        <li>Statistical pattern recognition</li>
-                                    </ul>
-                                </p>
-                                <a href="#" class="btn btn-primary">Email</a>
-                                <a href="#" class="btn btn-primary">Web</a>
-                            </div>
-                        </div>
-                    </div>
+            <br><h2>Professors</h2><br>
+            <div class="row people-faulty">
+                <div class="col-md-3 col-sm-4 col-xs-5">
+                    <img class="img-round" src="images/avatars/hwang.jpg" alt="" width="100%">
                 </div>
-
-                <div class="card row">
-                    <div class="no-gutters">
-                        <div style="width: 20%; float: left">
-                            <img src="images/avatars/sun.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col" style="width: 60%; float: left">
-                            <div class="card-block px-2">
-                                <h4 class="card-title">Prof. Ming-Ting Sun</h4>
-                                <p class="card-text"><strong>Research Interests:</strong> 
-                                    <ul>
-                                        <li>Video coding and networking - H.264 optimization, next generation video coding, transcoding, streaming</li>
-                                        <li>Machine learning - multi-modality, surveillance, health care, intelligent home</li>
-                                    </ul>
-                                </p>
-                                <a href="#" class="btn btn-primary">Email</a>
-                                <a href="#" class="btn btn-primary">Web</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                        <h4>Jenq-Neng Hwang</h4>
+                        <p class="text-muted">Professor<br>Associate Chair for Global Affairs and International Development</p>
+                        <p style="margin: 0.2rem;"><strong>Research Interests:</strong> 
+                            <ul class="our-ul">
+                                <li>Image/video signal processing</li>
+                                <li>Multimedia network and QoS</li>
+                                <li>Statistical pattern recognition</li>
+                            </ul>
+                        </p>
+                        <a href="mailto:hwang@uw.edu" class="btn btn-primary">Email</a>
+                        <a href="#" class="btn btn-primary">Web</a>
                 </div>
+            </div>
 
-                <br>
-
-                <h2>Affiliate Professor</h2>
-                <br>
-                <div class="card row">
-                    <div class="no-gutters">
-                        <div style="width: 20%; float: left">
-                            <img src="images/avatars/luo.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col" style="width: 60%; float: left">
-                            <div class="card-block px-2">
-                                <h4 class="card-title">Dr. Fa-Long Luo</h4>
-                                <p>Chief Scientist: Micron Technology, Inc.</p>
-                                <p class="card-text"><strong>Research Interests:</strong> 
-                                    <ul>
-                                        <li>Optimal silicon convergence of application algorithm</li>
-                                        <li>Computing platform and memory access in terms of high performance</li>
-                                        <li>Low power and small die-size</li>
-                                    </ul>
-                                </p>
-                                <a href="#" class="btn btn-primary">Email</a>
-                                <a href="#" class="btn btn-primary">Web</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row people-faulty">
+                <div class="col-md-3 col-sm-4 col-xs-5">
+                    <img class="img-round" src="images/avatars/sun.jpg" alt="" width="100%">
                 </div>
-
-            </section>
-
-            <section>
-                <h2>Graduate Students</h2>
-                <br>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <!-- Image -->
-                            <img src="images/avatars/zheng-tang.jpg" alt="" width="100%">
-                            <!-- Text Content -->
-                            <div class="card-body" style="padding: 10pt">
-                                <h4 class="card-title">Zheng Tang</h4>
-                                <h6 class="card-subtitle text-muted">Ph.D</h6>
-                                <p class="card-text">Computer Vision, Machine Learning, Multiple Object Tracking</p>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <!-- Image -->
-                            <img src="/pix/samples/12s.jpg" alt="">
-
-                            <!-- Text Content -->
-                            <div class="card-body">
-                                <h4 class="card-title">Sun Gone</h4>
-                                <h6 class="card-subtitle text-muted">Sun disappears!</h6>
-                                <p class="card-text">The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <!-- Image -->
-                            <img src="/pix/samples/12s.jpg" alt="">
-
-                            <!-- Text Content -->
-                            <div class="card-body">
-                                <h4 class="card-title">Sun Gone</h4>
-                                <h6 class="card-subtitle text-muted">Sun disappears!</h6>
-                                <p class="card-text">The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p>
-                            </div>
-                        </div> 
-                    </div>
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                        <h4>Ming-Ting Sun</h4>
+                        <p class="text-muted">Professor</p>
+                        <p style="margin: 0.2rem;"><strong>Research Interests:</strong> 
+                            <ul class="our-ul">
+                                <li>Video coding and networking - H.264 optimization, next generation video coding, transcoding, streaming</li>
+                                <li>Machine learning - multi-modality, surveillance, health care, intelligent home</li>
+                            </ul>
+                        </p>
+                        <a href="#" class="btn btn-primary">Email</a>
+                        <a href="#" class="btn btn-primary">Web</a>
                 </div>
-            </section>
+            </div>
+
+            <br><h2>Affiliate Professor</h2><br>
+            <div class="row people-faulty">
+                <div class="col-md-3 col-sm-4 col-xs-5">
+                    <img class="img-round" src="images/avatars/luo.jpg" alt="" width="100%">
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                        <h4>Dr. Fa-Long Luo</h4>
+                        <p class="text-muted">Chief Scientist at Micron Technology, Inc.</p>
+                        <p style="margin: 0.2rem;"><strong>Research Interests:</strong> 
+                            <ul class="our-ul">
+                                <li>Optimal silicon convergence of application algorithm</li>
+                                <li>Computing platform and memory access in terms of high performance</li>
+                                <li>Low power and small die-size</li>
+                            </ul>
+                        </p>
+                        <a href="#" class="btn btn-primary">Email</a>
+                        <a href="#" class="btn btn-primary">Web</a>
+                </div>
+            </div>
+
+            <br><hr><br>
+
+            <h2>Ph.D</h2>
+            <br>
+            <div class="row">
+                <!-- <div class="people-student"> -->
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
+                        <a href="https://sites.google.com/site/zhengthomastang">
+                            <img class="img-circle" src="images/avatars/zheng_tang.jpg" alt="" width="100%">
+                        </a>
+                        <div class="bio-text">
+                            <h5>Zheng Tang</h5>
+                            <h6 class="text-muted">zhtang@uw.edu</h6>
+                            <p>
+                                <span class="tag tag-pill tag-info">Computer Vision</span>
+                                <span class="tag tag-pill tag-info">Machine Learning</span>
+                                <span class="tag tag-pill tag-info">Multiple Object Tracking</span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="people-student"> -->
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
+                        <!-- <a href="https://sites.google.com/site/zhengthomastang"> -->
+                            <img class="img-circle" src="images/avatars/renshu_gu.jpg" alt="" width="100%">
+                        <!-- </a> -->
+                        <div class="bio-text">
+                            <h5>Renshu Gu</h5>
+                            <h6 class="text-muted">renshugu@uw.edu</h6>
+                            <p>
+                                <span class="tag tag-pill tag-info">Computer Vision</span>
+                                <span class="tag tag-pill tag-info">Multimedia</span>
+                                <span class="tag tag-pill tag-info">Human Pose Estimation</span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="people-student"> -->
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
+                        <a href="https://sites.google.com/a/uw.edu/twhuang">
+                            <img class="img-circle" src="images/avatars/tsung-wei_huang.jpg" alt="" width="100%">
+                        </a>
+                        <div class="bio-text">
+                            <h5>Tsung-Wei Huang</h5>
+                            <h6 class="text-muted">zhtang@uw.edu</h6>
+                            <p>
+                                <span class="tag tag-pill tag-info">Computer Vision</span>
+                                <span class="tag tag-pill tag-info">Machine Learning</span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="people-student"> -->
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
+                        <a href="https://sites.google.com/site/gaoangwang1991">
+                            <img class="img-circle" src="images/avatars/gaoang_wang.jpg" alt="" width="100%">
+                        </a>
+                        <div class="bio-text">
+                            <h5>Gaoang Wang</h5>
+                            <h6 class="text-muted">gaoang@uw.edu</h6>
+                            <p>
+                                <span class="tag tag-pill tag-info">Computer Vision</span>
+                                <span class="tag tag-pill tag-info">Machine Learning</span>
+                                <span class="tag tag-pill tag-info">Multiple Object Tracking</span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="people-student"> -->
+                    <div class="people-student col-md-3 col-sm-4 col-xs-6">
+                        <a href="https://students.washington.edu/cluw">
+                            <img class="img-circle" src="images/avatars/li_chen.jpg" alt="" width="100%">
+                        </a>
+                        <div class="bio-text">
+                            <h5>Li Chen</h5>
+                            <h6 class="text-muted">cluw@uw.edu</h6>
+                            <p>
+                                <span class="tag tag-pill tag-info">Biomedical Image Processing</span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
         </section>
         
-        <section id="tags">
-            <h2>Introducing <span class="tag tag-default">Tags</span></h2>
-            <p>Bootstrap's tag classes can be used to highlight additional information that's appended to a string of text. </p> 
-            <p><a href="http://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_tags.cfm">Tags</a> replace labels from Bootstrap 3.</p>
-            <h3>Contextual Tags</h3>
-            <p>Add some color based on context.</p>
-            <p>
-                <span class="tag tag-default">Default</span>
-                <span class="tag tag-primary">Primary</span>
-                <span class="tag tag-success">Success</span>
-                <span class="tag tag-info">Info</span>
-                <span class="tag tag-warning">Warning</span>
-                <span class="tag tag-danger">Danger</span>
-            </p>
-            <h3>Pill Tags</h3>
-            <p>Use the <code>.tag-pill</code> class to give your tags rounded corners.</p>
-            <p>
-                <span class="tag tag-pill tag-default">Default</span>
-                <span class="tag tag-pill tag-primary">Primary</span>
-                <span class="tag tag-pill tag-success">Success</span>
-                <span class="tag tag-pill tag-info">Info</span>
-                <span class="tag tag-pill tag-warning">Warning</span>
-                <span class="tag tag-pill tag-danger">Danger</span>
-            </p>
-        </section>
-
-        <section id="customForms">
-            <h2>Introducing Custom Forms</h2>
-            <p>Bootstrap 4 introduces <a href="http://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_custom_forms.cfm">custom forms</a>. These are custom form elements that completely replace the browser defaults. The idea behind custom forms is that they allow for more customization and cross browser consistency.</p>
-            <p>
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Boots</span>
-                </label>
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Shoes</span>
-                </label>
-            </p>
-            <div class="custom-controls-stacked">
-                <label class="custom-control custom-radio">
-                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Boots</span>
-                </label>
-                <label class="custom-control custom-radio">
-                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Shoes</span>
-                </label>
-            </div>
-            <p>
-                <select class="custom-select">
-                    <option selected>Choose One...</option>
-                    <option value="1">Boots</option>
-                    <option value="2">Shoes</option>
-                    <option value="3">Feet</option>
-                </select>
-            </p>
-            <p>
-                <label class="custom-file">
-                    <input type="file" id="file" class="custom-file-input">
-                    <span class="custom-file-control"></span>
-                </label>
-            </p>
-        </section>
-
-
-        <section id="outlineButtons">
-            <h2>Outline Buttons</h2>
-            <p>Bootstrap 4 introduces outline buttons &mdash; buttons with a contextual outline.</p>
-            <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
-            <button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
-            <button type="button" class="btn btn-lg btn-outline-info">Info</button>
-            <button type="button" class="btn btn-lg btn-outline-success">Success</button>
-            <button type="button" class="btn btn-lg btn-outline-warning">Warning</button>
-            <button type="button" class="btn btn-lg btn-outline-danger">Danger</button>
-        </section>
-
-
-
-        <section id="progress">
-            <h2>Progress Bars</h2>
-            <p>Bootstrap 4 takes advantage of the HTML5 <a href="http://www.quackit.com/html/tags/html_progress_tag.cfm"><code>&lt;progress&gt;</code></a> element when working with progress bars.</p> 
-            <progress class="progress progress-success" value="73" max="100">73%</progress>
-            <progress class="progress progress-info" value="500" max="1000">50%</progress>
-            <progress class="progress progress-warning" value="35" max="100">35%</progress>
-            <progress class="progress progress-danger" value="200" max="1000">20%</progress>     
-        </section>
-
-
-        <section id="tables">
-            <h2>Responsive Tables</h2>
-            <p>Bootstrap 4 allows you to apply the <code>.table-responsive</code> class directly to the table (as opposed to being required to apply it to a parent element, like in Bootstrap 3).</p> 
-  
-            <table class="table table-responsive">
-                <thead>
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                        <th>Header 3</th>
-                        <th>Header 4</th>
-                        <th>Header 5</th>
-                        <th>Header 6</th>
-                        <th>Header 7</th>
-                        <th>Header 8</th>
-                        <th>Header 9</th>
-                        <th>Header 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h3>Reflow Tables</h3>
-            <p>There's a new <code>.table-reflow</code> class that effectively turns your table on its side.</p>
-
-            <table class="table table-reflow">
-                <thead>
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                        <th>Header 3</th>
-                        <th>Header 4</th>
-                        <th>Header 5</th>
-                        <th>Header 6</th>
-                        <th>Header 7</th>
-                        <th>Header 8</th>
-                        <th>Header 9</th>
-                        <th>Header 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h3>Table Head Styles</h3>
-            <p>You can add background color to your table headers in Bootstrap 4.</p>
-
-            <table class="table">
-                <thead class="thead-inverse">
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                        <th>Header 3</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>Footer 1</th>
-                        <th>Footer 2</th>
-                        <th>Footer 3</th>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-
         <footer>
             <p>&copy; 2019 IPL@UW</p>
         </footer>
