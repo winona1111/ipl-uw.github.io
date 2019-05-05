@@ -14,6 +14,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
     <!-- Some extra styles (remove if not needed) -->
     <style>
@@ -69,11 +71,11 @@
         .news-bullet li:before
         {
             /*Using a Bootstrap glyphicon as the bullet point*/
-            content: "\e080";
+            content: "📌";
             font-family: 'Glyphicons Halflings';
-            font-size: 25px;
+            font-size: 30px;
             float: left;
-            margin-left: -40px;
+            margin-left: -50px;
             margin-right: 10px;
             color: #CCCCCC;
         }
@@ -122,7 +124,11 @@
         <section id="news">
             <h2 class="display-4">News</h2><br>
             <ul class="news-bullet">
-                <li>aaa</li>
+                <li>
+                    <span class="tag tag-pill tag-success">2019/04/01</span>
+                    Professor Hwang is interviewed by The Wall Street Journal. 
+                    <a href="https://www.wsj.com/articles/how-many-fish-are-there-in-the-sea-ai-can-find-the-answer-11554155162"><i class="fas fa-link"></i></a>
+                </li>
             </ul>
         </section>
     </div>
