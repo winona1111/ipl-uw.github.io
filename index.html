@@ -16,101 +16,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      
-    <!-- Some extra styles (remove if not needed) -->
-    <style>
-        section {
-            padding: 70px 0;
-            border-bottom: 1px dotted #ccc;
-        }
 
-        /* So that we can see the grid */
-        .grid-example  div[class^="col"] {
-            border: 1px solid white;
-            background: lightblue;
-            text-align: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            }
-
-        .jumbotron {
-            margin-top: 3rem;
-            position: relative;
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-        .jumbotron h2 {margin-top:0;}
-        .jumbotron .container {
-          position:relative;
-          z-index:2;
-        }
-
-        .jumbotron-billboard .img {
-            margin-bottom: 0px;
-            opacity: 0.2;
-            color: #fff;
-            background: #000 url("images/photos/group_photo_2018.jpg") center center no-repeat;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            overflow: hidden;
-            position:absolute;
-            top:0;
-            left:0;
-            z-index:1;
-        }
-
-        @media screen and (max-width: 768px) {
-          .jumbotron {
-            padding-top:20px;
-            padding-bottom:20px;
-          }
-        }
-
-        .people-faulty {
-            padding-top: 0rem;
-            padding-bottom: 2rem;
-        }
-        .people-student {
-            display: inline-block;
-            position: relative;
-            vertical-align: top;
-            float: none;
-            padding-bottom: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .our-ul {
-            padding-inline-start: 20px;
-        }
-        .img-round {
-            border-radius: 10%;
-        }
-        .img-circle {
-            border-radius: 50%;
-        }
-        .bio-text {
-            padding: 0.5rem;
-        }
-        .news-bullet li {
-            display: block;
-            font-size: 22px;
-            margin: 1rem;
-        }
-
-        .news-bullet li:before
-        {
-            /*Using a Bootstrap glyphicon as the bullet point*/
-            content: "📌";
-            /*font-family: 'Glyphicons Halflings';*/
-            font-size: 30px;
-            float: left;
-            margin-left: -50px;
-            margin-right: 10px;
-            color: #CCCCCC;
-        }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/main.css"/>
 
   </head>
 
@@ -121,11 +28,13 @@
             <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 &#9776;
             </button>
-            <a class="navbar-brand" href="index.html">IPL@UW</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/ipl-logo-white-50x30.png">
+            </a>
             <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="people.html#people">People</a>
+                        <a class="nav-link" href="people.html">People</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -189,199 +98,15 @@
                     <a href="https://blogs.nvidia.com/blog/2017/08/09/ai-city-challenge/"><span class="tag tag-pill tag-default"><i class="far fa-newspaper"></i> Nvidia Blog</span></a>
                 </li>
             </ul>
+            <br><br>
         </section>
     </div>
 
     <div class="container">
-        <section id="people">
-            <h2 class="display-4">People</h2>
-            <br><br>
-            <!-- <h2>Professor</h2><br> -->
-            <div class="row people-faulty">
-                <div class="col-md-3 col-sm-4 col-xs-5">
-                    <img class="img-round" src="images/avatars/hwang.jpg" alt="" width="100%">
-                </div>
-                <div class="col-md-9 col-sm-8 col-xs-7">
-                        <h4>Jenq-Neng Hwang</h4>
-                        <p class="text-muted">Professor<br>Associate Chair for Global Affairs and International Development</p>
-                        <p>
-                            <strong>Office:</strong> M426 EE/CSE Bldg. <br>
-                            <strong>Phone:</strong> (206) 685-1603 <br>
-                            <strong>Email:</strong> hwang@uw.edu <br>
-                        </p>
-                        <p style="margin-bottom: 0.2rem;"><strong>Research Interests:</strong> 
-                            <ul class="our-ul">
-                                <li>Image/video signal processing</li>
-                                <li>Multimedia network and QoS</li>
-                                <li>Statistical pattern recognition</li>
-                            </ul>
-                        </p>
-                        <a href="mailto:hwang@uw.edu" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="http://allison.ee.washington.edu/hwang/" class="btn btn-primary"><i class="fas fa-globe"></i> Web</a>
-                </div>
-            </div>
-
-            <div class="row people-faulty">
-                <div class="col-md-3 col-sm-4 col-xs-5">
-                    <img class="img-round" src="images/avatars/sun.jpg" alt="" width="100%">
-                </div>
-                <div class="col-md-9 col-sm-8 col-xs-7">
-                        <h4>Ming-Ting Sun</h4>
-                        <p class="text-muted">Professor</p>
-                        <p>
-                            <strong>Office:</strong> M418 EE/CSE Bldg. <br>
-                            <strong>Phone:</strong> (206) 616-8690 <br>
-                            <strong>Email:</strong> sun@ece.uw.edu <br>
-                        </p>
-                        <p style="margin-bottom: 0.2rem;"><strong>Research Interests:</strong> 
-                            <ul class="our-ul">
-                                <li>Video coding and networking - H.264 optimization, next generation video coding, transcoding, streaming</li>
-                                <li>Machine learning - multi-modality, surveillance, health care, intelligent home</li>
-                            </ul>
-                        </p>
-                        <a href="mailto:sun@ee.washington.edu" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="http://www.ee.washington.edu/people/ming-ting-sun/" class="btn btn-primary"><i class="fas fa-globe"></i> Web</a>
-                </div>
-            </div>
-
-            <!-- <br><h2>Affiliate Professor</h2><br> -->
-            <div class="row people-faulty">
-                <div class="col-md-3 col-sm-4 col-xs-5">
-                    <img class="img-round" src="images/avatars/luo.jpg" alt="" width="100%">
-                </div>
-                <div class="col-md-9 col-sm-8 col-xs-7">
-                        <h4>Dr. Fa-Long Luo</h4>
-                        <p class="text-muted">Affiliate Professor<br>Chief Scientist at Micron Technology, Inc.</p>
-                        <p style="margin-bottom: 0.2rem;"><strong>Research Interests:</strong> 
-                            <ul class="our-ul">
-                                <li>Optimal silicon convergence of application algorithm</li>
-                                <li>Computing platform and memory access in terms of high performance</li>
-                                <li>Low power and small die-size</li>
-                            </ul>
-                        </p>
-                        <a href="mailto:falong@uw.edu" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="http://allison.ee.washington.edu/luo/" class="btn btn-primary"><i class="fas fa-globe"></i> Web</a>
-                </div>
-            </div>
-
-            <br><hr><br>
-
-            <h2>Ph.D</h2>
-            <br>
-            <div class="row">
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="https://sites.google.com/site/zhengthomastang">
-                        <img class="img-circle" src="images/avatars/zheng_tang.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Zheng (Thomas) Tang</h5>
-                        <h6 class="text-muted">zhtang@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Machine Learning</span>
-                            <span class="tag tag-pill tag-info">Multiple Object Tracking</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <!-- <a href=""> -->
-                        <img class="img-circle" src="images/avatars/renshu_gu.jpg" alt="" width="100%">
-                    <!-- </a> -->
-                    <div class="bio-text">
-                        <h5>Renshu Gu</h5>
-                        <h6 class="text-muted">renshugu@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Multimedia</span>
-                            <span class="tag tag-pill tag-info">Human Pose Estimation</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="https://sites.google.com/a/uw.edu/twhuang">
-                        <img class="img-circle" src="images/avatars/tsung-wei_huang.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Tsung-Wei Huang</h5>
-                        <h6 class="text-muted">zhtang@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Machine Learning</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="https://sites.google.com/site/gaoangwang1991">
-                        <img class="img-circle" src="images/avatars/gaoang_wang.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Gaoang Wang</h5>
-                        <h6 class="text-muted">gaoang@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Machine Learning</span>
-                            <span class="tag tag-pill tag-info">Multiple Object Tracking</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="https://students.washington.edu/cluw">
-                        <img class="img-circle" src="images/avatars/li_chen.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Li Chen</h5>
-                        <h6 class="text-muted">cluw@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Biomedical Image Processing</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="https://haotian-zhang.github.io/">
-                        <img class="img-circle" src="images/avatars/haotian_zhang.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Haotian (Carl) Zhang</h5>
-                        <h6 class="text-muted">haotiz@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Machine Learning</span>
-                            <span class="tag tag-pill tag-info">Wireless Multimedia Communication</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <!-- <a href=""> -->
-                        <img class="img-circle" src="images/avatars/jiarui_cai.jpg" alt="" width="100%">
-                    <!-- </a> -->
-                    <div class="bio-text">
-                        <h5>Jiarui Cai</h5>
-                        <h6 class="text-muted">jrcai@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Medical Image Processing</span>
-                            <span class="tag tag-pill tag-info">Deep Learning</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="people-student col-md-3 col-sm-4 col-xs-6">
-                    <a href="http://yizhouwang.net/">
-                        <img class="img-circle" src="images/avatars/yizhou_wang.jpg" alt="" width="100%">
-                    </a>
-                    <div class="bio-text">
-                        <h5>Yizhou Wang</h5>
-                        <h6 class="text-muted">ywang26@uw.edu</h6>
-                        <p>
-                            <span class="tag tag-pill tag-info">Computer Vision</span>
-                            <span class="tag tag-pill tag-info">Machine Learning</span>
-                            <span class="tag tag-pill tag-info">Natural Language Processing</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <footer>
+            <br>
             <p>&copy; 2019 IPL@UW</p>
+            <br>
         </footer>
     </div> <!-- /container -->
 
