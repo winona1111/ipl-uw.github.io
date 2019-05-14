@@ -1,0 +1,85 @@
+section {
+    padding: 70px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.jumbotron {
+    margin-top: 3rem;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+    .jumbotron h2 {
+        margin-top:0;
+    }
+        .jumbotron .container {
+          position:relative;
+          z-index:2;
+        }
+
+.jumbotron-billboard .img {
+    margin-bottom: 0px;
+    opacity: 0.2;
+    color: #fff;
+    background: #000 url("../../images/photos/group_photo_2018.jpg") center center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+}
+
+.people-faulty {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+}
+.people-student {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    float: none;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.our-ul {
+    padding-inline-start: 20px;
+}
+
+.img-round {
+    border-radius: 10%;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+.bio-text {
+    padding: 0.5rem;
+}
+
+.news-bullet li {
+    display: block;
+    font-size: 22px;
+    margin: 1rem;
+}
+    .news-bullet li:before
+    {
+        /*Using a Bootstrap glyphicon as the bullet point*/
+        content: "📌";
+        /*font-family: 'Glyphicons Halflings';*/
+        font-size: 30px;
+        float: left;
+        margin-left: -50px;
+        margin-right: 10px;
+        color: #CCCCCC;
+    }
