@@ -91,3 +91,7 @@ section {
         margin-right: 10px;
         color: #CCCCCC;
     }
+
+.post-bullet li {
+    font-size: 1.5rem;
+}
