@@ -14,7 +14,7 @@ section {
 .jumbotron {
     margin-top: 3rem;
     position: relative;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 15%;
 }
     .jumbotron h2 {
@@ -27,7 +27,7 @@ section {
 
 .jumbotron-billboard .img {
     margin-bottom: 0px;
-    opacity: 0.2;
+    opacity: 0.8;
     color: #fff;
     background: #000 url("../../images/photos/group_photo_20190612.jpg") center center no-repeat;
     width: 100%;
@@ -38,6 +38,11 @@ section {
     top:0;
     left:0;
     z-index:1;
+}
+
+.jumbotron-title {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 768px) {
