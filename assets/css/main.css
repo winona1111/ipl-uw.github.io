@@ -76,6 +76,25 @@ section {
     border-radius: 50%;
 }
 
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: 100%;
+  height: auto%;
+  margin-left: -50px;
+}
+
+.navbar-dark {
+    background-color: #4b2e83;
+}
+
 .bio-text {
     padding: 0.5rem;
 }
@@ -175,7 +194,8 @@ section {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  color: #f2f2f2;
+  /*background-color: #717171;*/
 }
 
 /* Fading animation */
