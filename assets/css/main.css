@@ -3,6 +3,10 @@ section {
     border-bottom: 1px dotted #ccc;
 }
 
+.imgContainer{
+  float:center;
+}
+
 #news p {
     font-size: 1.5rem;
 }
