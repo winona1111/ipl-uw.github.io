@@ -31,9 +31,9 @@ section {
 
 .jumbotron-billboard .img {
     margin-bottom: 0px;
-    opacity: 0.8;
+    opacity: 0.4;
     color: #fff;
-    background: #000 url("../../images/photos/group_photo_20190612.jpg") center center no-repeat;
+    background: #000 url("../../images/photos/group_photo_20220608.jpeg") center center no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
