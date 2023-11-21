@@ -6,6 +6,7 @@
 4. [Domain Adaptation](#domain-adaptation)
 5. [LLM](#llm)
 6. [Continual Learning](#continual-learning)
+7. [Fish Pose Estimation](#fish-pose-estimation)
 
 ## Tracking
 
@@ -21,3 +22,5 @@
 ## LLM
 
 ## Continual Learning
+
+## Fish Pose Estimation
