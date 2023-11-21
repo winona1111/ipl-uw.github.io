@@ -5,6 +5,7 @@
 3. [Radar Object Detection](#radar-object-detection)
 4. [Domain Adaptation](#domain-adaptation)
 5. [LLM](#llm)
+6. [Continual Learning](#continual-learning)
 
 ## Tracking
 
@@ -18,3 +19,5 @@
 ## Radar Object Detection
 ## Domain Adaptation
 ## LLM
+
+## Continual Learning
