@@ -45,6 +45,7 @@
 Human Pose Estimation (HPE) is a task focusing on estimating 2D or 3D human keypoints/shapes from images or videos. We aim to develop robust and effective (HPE) pipelines.
 
 - [ZeDO](https://zhyjiang.github.io/ZeDO-proj/): Back to Optimization: Diffusion-based Zero-Shot 3D Human Pose Estimation (WACV 2024)
+<p align="center"><img src="images/news/zedo_overall.png" width="50%" alt="" /></p>
 
 ## Radar Object Detection
 ## Domain Adaptation
