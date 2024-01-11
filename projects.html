@@ -62,8 +62,9 @@
             <h3>Content</h3>
             <ul>
                 <li>
-                    <a href="#h3-tracking">Tracking</a>
+                    <a href="#h3-tracking">Multi-Object Tracking</a>
                     <ul>
+                        <li><a href="#h4-mtmct">Multi-Target Multi-Camera Tracking</a></li>
                         <li><a href="#h4-scmtt">Single-Camera Multi-Object Tracking</a></li>
                         <li><a href="#h4-tnt">TrackletNet Tracker (TNT)</a></li>
                         <li><a href="#h4-iamot">Single-Camera Multi-Object Tracking and Segmentation (tracking-only)</a></li>
@@ -71,18 +72,18 @@
                         <li><a href="#h4-mtmct">Multi-Target Multi-Camera Tracking</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#h3-reid">Re-Identification</a>
-                </li>
+<!--                <li>-->
+<!--                    <a href="#h3-reid">Re-Identification</a>-->
+<!--                </li>-->
                 <li>
                     <a href="#h3-hpe">Human Pose Estimation</a>
                 </li>
-                <li>
-                    <a href="#h3-obj3dloc">Object 3D Localization</a>
-                    <ul>
-                        <li><a href="#h4-mo3dloc">Monocular Visual Object 3D Localization in Road Scenes</a></li>
-                    </ul>
-                </li>
+<!--                <li>-->
+<!--                    <a href="#h3-obj3dloc">Object 3D Localization</a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="#h4-mo3dloc">Monocular Visual Object 3D Localization in Road Scenes</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
 <!--                <li>-->
 <!--                    <a href="#h3-video-captioning">Video Captioning</a>-->
 <!--                    <ul>-->
@@ -92,18 +93,22 @@
             </ul>
             <br><hr><br>
 
-            <h3 id="h3-tracking"><b>Tracking</b> 🚘🚶</h3>
-            <h4 id="h4-scmtt">Single-Camera Multi-Object Tracking</h4>
+            <h3 id="h3-tracking"><b>Multi-Object Tracking</b> 🚘🚶</h3>
+            <h4 id="h4-scmtt">Multi-Target Multi-Camera Tracking</h4>
+            <h4 id="h4-scmtt">Multi-Object Tracking for Sports </h4>
+            <h4 id="h4-scmtt">Multi-Object Tracking for Maritime Vision </h4>
+            <h4 id="h4-scmtt">Multi-Object Tracking for Underwater Vision </h4>
+            <h4 id="h4-scmtt">Previous Works (before 2021) </h4>
+
             <h5>
-                <a href="https://github.com/zhengthomastang/2018AICity_TeamUW" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w3/Tang_Single-Camera_and_Inter-Camera_CVPR_2018_paper.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+                Traffic Flow Analysis <a href="https://github.com/zhengthomastang/2018AICity_TeamUW" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w3/Tang_Single-Camera_and_Inter-Camera_CVPR_2018_paper.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
             </h5>
             <p> Tracking of vehicles across multiple cameras with nonoverlapping views has been a challenging task for the intelligent transportation system (ITS). It is mainly because of high similarity among vehicle models, frequent occlusion, large variation in different viewing perspectives and low video resolution. In this work, we propose a fusion of visual and semantic features for both single-camera tracking (SCT) and inter-camera tracking (ICT). Specifically, a histogram-based adaptive appearance model is introduced to learn long-term history of visual features for each vehicle target. Besides, semantic features including trajectory smoothness, velocity change and temporal information are incorporated into a bottom-up clustering strategy for data association in each single camera view. Across different camera views, we also exploit other information, such as deep learning features, detected license plate features and detected car types, for vehicle re-identification. Additionally, evolutionary optimization is applied to camera calibration for reliable 3D speed estimation. Our algorithm achieves the top performance in both 3D speed estimation and vehicle reidentification at the <a href='https://www.aicitychallenge.org/2018-ai-city-challenge/'>NVIDIA AI City Challenge 2018</a>.</p>
             <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_i4numqiv7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             <br>
 
-            <h4 id="h4-tnt">TrackletNet Tracker (TNT)</h4>
             <h5>
-                <a href="https://github.com/GaoangW/TNT" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="https://arxiv.org/abs/1811.07258" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+               TrackletNet Tracker (TNT)  <a href="https://github.com/GaoangW/TNT" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="https://arxiv.org/abs/1811.07258" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
             </h5>
             <p>TrackletNet Tracker (TNT): combines temporal and appearance information together as a unified framework. First, we define a graph model which treats each tracklet as a vertex. The tracklets are generated by appearance similarity with CNN features and intersection-over-union (IOU) with epipolar constraints to compensate camera movement between adjacent frames. Then, for every pair of two tracklets, the similarity is measured by our designed multi-scale TrackletNet. Afterwards, the tracklets are clustered into groups which represent individual object IDs. Our proposed TNT has the ability to handle most of the challenges in MOT, and achieve promising results on MOT16 and MOT17 benchmark datasets compared with other state-of-the-art methods. TNT demo:</p>
             <br>
@@ -113,10 +118,10 @@
             <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/I0Jj80pyvec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             <br>
 
-            <h4 id="h4-lifts">Single-Camera Multi-Object Tracking and Segmentation (instance segmentation and tracking)</h4>
-            <p> In recent years, the computer vision society has made significant progress in multi-object tracking (MOT) and video object segmentation (VOS) respectively. Further progress can be achieved by effectively combining the following tasks together – detection, segmentation and tracking. In this work, we propose a multi-stage framework called “Lidar and monocular Image based multi-object Tracking and Segmentation (LIFTS)”. In the first stage, we use a 3D Part-Aware and Aggregation Network detec- tor on the point cloud data to get accurate 3D object locations. Then a graph-based 3D TrackletNet Tracker (3D TNT), which takes both CNN appearance features and object spatial information, is applied to robustly associate objects along time. The second stage involves a Cascade Mask R-CNN based network with PointRend head for ob- taining instance segmentation results from monocular images. Its input 2D pre-computed region proposals are generated from 3D detections in the first stage. Moreover, two post-processing techniques are further applied in the last stage: (1) generated mask results are further refined by a proposed optical-flow guided instance segmentation net- work; (2) object re-identification (ReID) is applied to recover ID switches caused by long-term occlusion; Overall, our proposed framework is evaluated on BMTT Challenge 2020 Track2: KITTI-MOTS dataset and achieves a 79.6 sMOTSA for Car and 64.9 for Pedestrian, with the 2nd place ranking in the competition. demo:</p>
-            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/FsI-ofyInQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            <br>
+<!--            <h4 id="h4-lifts">Single-Camera Multi-Object Tracking and Segmentation (instance segmentation and tracking)</h4>-->
+<!--            <p> In recent years, the computer vision society has made significant progress in multi-object tracking (MOT) and video object segmentation (VOS) respectively. Further progress can be achieved by effectively combining the following tasks together – detection, segmentation and tracking. In this work, we propose a multi-stage framework called “Lidar and monocular Image based multi-object Tracking and Segmentation (LIFTS)”. In the first stage, we use a 3D Part-Aware and Aggregation Network detec- tor on the point cloud data to get accurate 3D object locations. Then a graph-based 3D TrackletNet Tracker (3D TNT), which takes both CNN appearance features and object spatial information, is applied to robustly associate objects along time. The second stage involves a Cascade Mask R-CNN based network with PointRend head for ob- taining instance segmentation results from monocular images. Its input 2D pre-computed region proposals are generated from 3D detections in the first stage. Moreover, two post-processing techniques are further applied in the last stage: (1) generated mask results are further refined by a proposed optical-flow guided instance segmentation net- work; (2) object re-identification (ReID) is applied to recover ID switches caused by long-term occlusion; Overall, our proposed framework is evaluated on BMTT Challenge 2020 Track2: KITTI-MOTS dataset and achieves a 79.6 sMOTSA for Car and 64.9 for Pedestrian, with the 2nd place ranking in the competition. demo:</p>-->
+<!--            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/FsI-ofyInQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>-->
+<!--            <br>-->
 
             <h4 id="h4-mtmct">Multi-Target Multi-Camera Tracking</h4>
             <h5>
@@ -128,9 +133,8 @@
             <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/WS2Q6yhMxdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             <br>
 
-            <h4 id="h4-drone-tracking">Drone-Based Object Tracking 🛩 </h4>
             <h5>
-                <a href="https://arxiv.org/pdf/1910.08259.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+                Drone-Based Object Tracking 🛩 <a href="https://arxiv.org/pdf/1910.08259.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
             </h5>
             <p>Drones, or general UAVs, equipped with a single camera have been widely deployed to a broad range of applications, such as aerial pho- tography, fast goods delivery and most importantly, surveillance. Despite the great progress achieved in computer vision algorithms, these algorithms are not usually optimized for dealing with images or video sequences acquired by drones, due to various challenges such as occlusion, fast camera motion and pose variation. In this pa- per, a drone-based multi-object tracking and 3D localization scheme is proposed based on the deep learning based object detection. We first combine a multi-object tracking method called TrackletNet Tracker (TNT) which utilizes temporal and appearance information to track detected objects located on the ground for UAV applica- tions. Then, we are also able to localize the tracked ground objects based on the group plane estimated from the Multi-View Stereo technique. The system deployed on the drone can not only detect and track the objects in a scene, but can also localize their 3D coordi- nates in meters with respect to the drone camera. The experiments have proved our tracker can reliably handle most of the detected objects captured by drones and achieve favorable 3D localization performance when compared with the state-of-the-art methods.</p>
             <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/xr225CDL9ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
